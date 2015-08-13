@@ -12,7 +12,7 @@
 ${sessionScope.vname }
 ${sessionScope.vuser_id }
 <hr/>
-<a href="viewcat.htm">View by category</a>
+<a href="viewcat.htm">View by category</a><br>
 <a href="viewall.htm">View All Employees</a><br/>
 <a href="loginfrm.htm">Login Form</a><br/>
 <a href="addworkerfrm.htm">Add Worker</a><br/>
