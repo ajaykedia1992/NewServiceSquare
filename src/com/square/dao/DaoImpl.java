@@ -21,8 +21,8 @@ public class DaoImpl implements DaoI {
 
 	private JdbcTemplate jtemp;
 	public int addUserDetails(User user) {
-		String sql="insert into user(user_id,email,password,full_name,contactno,sex) values('',?,?,?,?,?)";
-		jtemp.update(sql,user.getUid(),user.getPassword(),user.getFullname(),user.getContactno(),user.getSex());
+		String sql="insert into user(email,password,full_name,contactno,sex) values(?,?,?,?,?)";
+		jtemp.update(sql,user.getEmail(),user.getPassword(),user.getFullname(),user.getContactno(),user.getSex());
 			
 		return 0;
 	}

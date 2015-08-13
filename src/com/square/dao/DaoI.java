@@ -36,5 +36,6 @@ public interface DaoI {
 	public List<Map<String,Object>> viewWorkersNearBy(User u,Worker w);
 	 
 	
+	//public List<Map<String,Object>> viewWorkersNearBy(User u,Worker w);
 	
 }

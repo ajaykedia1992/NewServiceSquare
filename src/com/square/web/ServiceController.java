@@ -27,18 +27,20 @@ public class ServiceController {
 	}
 
 
-	@RequestMapping(value="add.htm", method=RequestMethod.GET)
+	@RequestMapping(value="newuser.htm", method=RequestMethod.GET)
 	public String addEmployeeFrm(Model model)
 	{
 	
 		model.addAttribute("user",new User());
-		return "AddFrm";
+		return "reg";
 	}
 	@RequestMapping(value="addclientdetails.htm", method=RequestMethod.POST)
 	public String addClientDetails(@ModelAttribute("user")User user,Model model)
 	{
 		dao.addUserDetails(user);
-		return "HelloWorld";
+		//return "HelloWorld";
+		
+		return "LoginPage";
 	}
 	@RequestMapping(value="addworkerfrm.htm", method=RequestMethod.GET)
 	public String addWorkerForm(Model model)
